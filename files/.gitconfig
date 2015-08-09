@@ -1,0 +1,37 @@
+[user]
+	name = Nadeem Ahmad
+  email = nadeemahmad91@gmail.com
+[color]
+	ui = true
+[push]
+	default = matching
+[alias]
+  a = add
+  alias = config --get-regexp alias
+  b = branch
+  ch = checkout
+  chf = checkout --
+  cm = commit
+  cma = commit --all
+  cmm = commit --amend
+  cmam = commit --all --amend
+  d = diff
+  dc = diff --cached
+  f = fetch
+	l = log
+  pk = cherry-pick
+  pl = pull
+  plrb = pull --rebase
+  ps = push
+  rb = rebase
+  rs = reset
+  rsh = reset HEAD
+  st = status
+  sh = show
+[core]
+  editor = vim
+	pager = less -F -X
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
