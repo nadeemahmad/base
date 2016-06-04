@@ -8,8 +8,9 @@
 #--------------------------------------
 declare -r REPO_DIR="${HOME}"
 declare -r REPO_NAME='.base'
-declare -r MAIN_FILES_DIR="${HOME}"
+declare -r MAIN_DIR="${HOME}"
 declare -r REPO_FILES_DIR="${REPO_DIR}/${REPO_NAME}/files"
+declare -r REPO_DIRS_DIR="${REPO_DIR}/${REPO_NAME}/directories"
 declare -r ORIGINAL_DIR="${PWD}"
 
 #--------------------------------------
@@ -24,7 +25,7 @@ function show_help() {
 Usage: $0
 
 Sets up necessary symlinks from the "files" directory in the "${REPO_NAME}"
-repostitory to "${MAIN_FILES_DIR}".
+repostitory to "${MAIN_DIR}".
 
   -h / --help  Show this help message.
 
@@ -57,8 +58,15 @@ cd $REPO_FILES_DIR
 files=$(ls -A)
 for file in $files
 do
-	rm -f "${MAIN_FILES_DIR}/${file}"
-  ln -sf "${REPO_FILES_DIR}/${file}" "${MAIN_FILES_DIR}/${file}"
+	rm -f "${MAIN_DIR}/${file}"
+  ln -sf "${REPO_FILES_DIR}/${file}" "${MAIN_DIR}/${file}"
+done
+
+directories=$(ls -A)
+for dir in $directories
+do
+	rm -rf "${MAIN_DIR}/${dir}"
+  ln -sf "${REPO_DIRS_DIR}/${dir}" "${MAIN_DIR}/${dir}"
 done
 
 cd $ORIGINAL_DIR

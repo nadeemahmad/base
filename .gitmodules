@@ -1,0 +1,6 @@
+[submodule "directories/.zsh"]
+	path = directories/.zsh
+	url = git@github.com:nadeemahmad/zsh.git
+[submodule "directories/.bash"]
+	path = directories/.bash
+	url = git@github.com:nadeemahmad/bash.git
