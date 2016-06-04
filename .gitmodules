@@ -4,3 +4,33 @@
 [submodule "directories/.bash"]
 	path = directories/.bash
 	url = git@github.com:nadeemahmad/bash.git
+[submodule "directories/.vim/bundle/syntastic"]
+	path = directories/.vim/bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule "directories/.vim/bundle/vim-puppet"]
+	path = directories/.vim/bundle/vim-puppet
+	url = git@github.com:rodjek/vim-puppet.git
+[submodule "directories/.vim/bundle/vim-json"]
+	path = directories/.vim/bundle/vim-json
+	url = git@github.com:leshill/vim-json.git
+[submodule "directories/.vim/bundle/vim-gitgutter"]
+	path = directories/.vim/bundle/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "directories/.vim/bundle/vim-fugitive"]
+	path = directories/.vim/bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "directories/.vim/bundle/vim-colorschemes"]
+	path = directories/.vim/bundle/vim-colorschemes
+	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "directories/.vim/bundle/nerdtree"]
+	path = directories/.vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "directories/.vim/bundle/nerdtree-git-plugin"]
+	path = directories/.vim/bundle/nerdtree-git-plugin
+	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
+[submodule "directories/.vim/bundle/vim-better-whitespace"]
+	path = directories/.vim/bundle/vim-better-whitespace
+	url = git@github.com:ntpeters/vim-better-whitespace.git
+[submodule "directories/.vim/bundle/vim-over"]
+	path = directories/.vim/bundle/vim-over
+	url = git@github.com:osyo-manga/vim-over.git
