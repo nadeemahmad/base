@@ -4,6 +4,3 @@
 [submodule "directories/.bash"]
 	path = directories/.bash
 	url = git@github.com:nadeemahmad/bash.git
-[submodule "directories/.vim"]
-	path = directories/.vim
-	url = git@github.com:nadeemahmad/vim.git
