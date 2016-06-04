@@ -53,8 +53,9 @@ done
 # Main Code Path
 #==========================================================
 
-cd $REPO_FILES_DIR
+cp "${REPO_FILES_DIR}/.startup" "${HOME}/.bash_profile"
 
+cd "${REPO_FILES_DIR}"
 files=$(ls -A)
 for file in $files
 do
@@ -62,11 +63,13 @@ do
   ln -sf "${REPO_FILES_DIR}/${file}" "${MAIN_DIR}/${file}"
 done
 
+cd "${REPO_DIRS_DIR}"
 directories=$(ls -A)
 for dir in $directories
 do
-	rm -rf "${MAIN_DIR}/${dir}"
+	rm -f "${MAIN_DIR}/${dir}"
   ln -sf "${REPO_DIRS_DIR}/${dir}" "${MAIN_DIR}/${dir}"
 done
 
-cd $ORIGINAL_DIR
+cd "${ORIGINAL_DIR}"
+
