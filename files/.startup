@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 export BASE_DIR="${HOME}/.base"
 if [ ! -d "${BASE_DIR}" ]; then
-	git clone --recursive --quiet "git@github.com:nadeemahmad/base.git" "${BASE_DIR}"
+	git clone --recursive --quiet "git@github.com:nadeemahmad/dotfiles.git" "${BASE_DIR}"
 	bash "${BASE_DIR}/build.sh"
 fi
 
