@@ -7,7 +7,7 @@
 # Global Variables
 #--------------------------------------
 declare -r REPO_DIR="${HOME}"
-declare -r REPO_NAME='.base'
+declare -r REPO_NAME='.dotfiles'
 declare -r MAIN_DIR="${HOME}"
 declare -r REPO_FILES_DIR="${REPO_DIR}/${REPO_NAME}/files"
 declare -r REPO_DIRS_DIR="${REPO_DIR}/${REPO_NAME}/directories"
