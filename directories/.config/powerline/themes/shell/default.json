@@ -25,7 +25,6 @@
         {
             "function": "powerline.segments.shell.mode"
         },
-
         {
             "function": "powerline.segments.common.vcs.branch",
             "priority": 40

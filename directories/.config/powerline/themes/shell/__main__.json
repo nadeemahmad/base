@@ -29,12 +29,6 @@
         "istime": true,
         "format": "%H:%M:%S%Z"
       }
-    },
-    "branch": {
-      "args": {
-        "status_colors": true
-      }
     }
-
   }
 }
