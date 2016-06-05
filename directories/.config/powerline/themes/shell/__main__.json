@@ -1,0 +1,40 @@
+{
+  "segment_data": {
+    "hostname": {
+      "args": {
+        "only_if_ssh": true
+      }
+    },
+    "cwd": {
+      "args": {
+        "dir_limit_depth": 4,
+        "use_path_separator": true
+      }
+    },
+    "mode": {
+      "args": {
+        "override": {
+          "vicmd": "N",
+          "viins": "I"
+        }
+      }
+    },
+    "user": {
+      "args": {
+        "hide_user": "nahmad"
+      }
+    },
+    "date": {
+      "args": {
+        "istime": true,
+        "format": "%H:%M:%S%Z"
+      }
+    },
+    "branch": {
+      "args": {
+        "status_colors": true
+      }
+    }
+
+  }
+}

@@ -13,26 +13,26 @@ export POWERLINE_ROOT='/usr/local/lib/python2.7/site-packages'
 export HOSTNAME="$(hostname)"
 if [[ "${HOSTNAME}" == *local ]]; then
 
-	GIT_PATH='/usr/local/git/bin'
-	DEVTOOLS_PATH='/Users/nahmad/Code/devtools/bin'
-	SYSTEM_BIN_PATH='/usr/local/bin:/usr/bin:/bin'
-	SYSTEM_SBIN_PATH='/usr/local/sbin:/usr/sbin:/sbin'
+  GIT_PATH='/usr/local/git/bin'
+  DEVTOOLS_PATH='/Users/nahmad/Code/devtools/bin'
+  SYSTEM_BIN_PATH='/usr/local/bin:/usr/bin:/bin'
+  SYSTEM_SBIN_PATH='/usr/local/sbin:/usr/sbin:/sbin'
 
-	export PATH="${DEVTOOLS_PATH}:${GIT_PATH}:${SYSTEM_BIN_PATH}:${SYSTEM_SBIN_PATH}"
+  export PATH="${DEVTOOLS_PATH}:${GIT_PATH}:${SYSTEM_BIN_PATH}:${SYSTEM_SBIN_PATH}"
 
-	if which rbenv > /dev/null
-	then
-		eval "$(rbenv init -)"
- 	fi
+  if which rbenv > /dev/null
+  then
+    eval "$(rbenv init -)"
+  fi
 
-	if [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]]
-	then
-		. $(brew --prefix)/etc/profile.d/autojump.sh
-	fi
+  if [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]]
+  then
+    . $(brew --prefix)/etc/profile.d/autojump.sh
+  fi
 
 else
-	# User specific environment and startup programs
-	export PATH="${PATH}:${HOME}/bin"
+  # User specific environment and startup programs
+  export PATH="${PATH}:${HOME}/bin"
 fi
 
 # Main directories/git repositories

@@ -98,7 +98,7 @@ alias tmc="cd ${TMUX_DIR}/bundle/tmux-custom"
 # Clear Screen
 alias cl='clear'
 # The new 'l'
-alias l='k --no-vcs'
+alias l='ls -AFhl'
 # List All
 alias la='ls -A'
 # Detail List

@@ -23,20 +23,20 @@ let g:vo_modules_load = "checkbox:tags:smart_paste"
 "let g:vo_modules_load .= ':clock'
 
 "User Preferences ***************************************************
-let maplocalleader = ',,'		" uncomment for compatibility with
+let maplocalleader = ',,'   " uncomment for compatibility with
                                         " previous versions of VO
 
 setlocal timeoutlen=300
-"setlocal ignorecase			" searches ignore case
-"setlocal smartcase			" searches use smart case
+"setlocal ignorecase      " searches ignore case
+"setlocal smartcase     " searches use smart case
 "setlocal wrapmargin=5
 "setlocal tw=78
-"setlocal tabstop=4			" tabstop and shiftwidth must match
-"setlocal shiftwidth=4			" values from 2 to 8 work well
-"setlocal background=dark		" for dark backgrounds
+"setlocal tabstop=4     " tabstop and shiftwidth must match
+"setlocal shiftwidth=4      " values from 2 to 8 work well
+"setlocal background=dark   " for dark backgrounds
 "setlocal nowrap
 
-" colorscheme votl_light			" set a VO specific colorscheme
+" colorscheme votl_light      " set a VO specific colorscheme
 
 "Checkbox Tags
 " Tags can contain any word characters (:help word)

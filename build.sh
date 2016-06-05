@@ -53,23 +53,29 @@ done
 # Main Code Path
 #==========================================================
 
-cp "${REPO_FILES_DIR}/.startup" "${HOME}/.bash_profile"
+if [ -e "${REPO_FILES_DIR}" ]; then
+  cp "${REPO_FILES_DIR}/.startup" "${HOME}/.bash_profile"
 
-cd "${REPO_FILES_DIR}"
-files=$(ls -A)
-for file in $files
-do
-	rm -f "${MAIN_DIR}/${file}"
-  ln -sf "${REPO_FILES_DIR}/${file}" "${MAIN_DIR}/${file}"
-done
+  cd "${REPO_FILES_DIR}"
+  files=$(ls -A)
+  for file in $files
+  do
+    rm -f "${MAIN_DIR}/${file}"
+    ln -sf "${REPO_FILES_DIR}/${file}" "${MAIN_DIR}/${file}"
+  done
 
-cd "${REPO_DIRS_DIR}"
-directories=$(ls -A)
-for dir in $directories
-do
-	rm -f "${MAIN_DIR}/${dir}"
-  ln -sf "${REPO_DIRS_DIR}/${dir}" "${MAIN_DIR}/${dir}"
-done
+  cd "${ORIGINAL_DIR}"
+fi
 
-cd "${ORIGINAL_DIR}"
+if [ -e "${REPO_DIRS_DIR}" ]; then
+  cd "${REPO_DIRS_DIR}"
+  directories=$(ls -A)
+  for dir in $directories
+  do
+    rm -f "${MAIN_DIR}/${dir}"
+    ln -sf "${REPO_DIRS_DIR}/${dir}" "${MAIN_DIR}/${dir}"
+  done
+
+  cd "${ORIGINAL_DIR}"
+fi
 

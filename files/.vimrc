@@ -42,7 +42,7 @@ set wildmode=list:longest
 set hidden
 
 " code specific stuff - TODO find a better place for this?
-set noexpandtab
+set expandtab
 set tabstop=2
 set shiftwidth=2
 
@@ -53,18 +53,18 @@ set equalalways
 if !has('nvim')
 
   " enable status bar
-	python from powerline.vim import setup as powerline_setup
-	python powerline_setup()
-	python del powerline_setup
+  python from powerline.vim import setup as powerline_setup
+  python powerline_setup()
+  python del powerline_setup
 
-	" Cursor manipulation
-	if exists('$TMUX')
-		let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-		let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-	else
-		let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-		let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-	endif
+  " Cursor manipulation
+  if exists('$TMUX')
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+  else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+  endif
 
 endif
 
