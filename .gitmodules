@@ -1,6 +1,3 @@
-[submodule "directories/.zsh"]
-	path = directories/.zsh
-	url = git@github.com:nadeemahmad/zsh.git
 [submodule "directories/.vim/bundle/syntastic"]
 	path = directories/.vim/bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
