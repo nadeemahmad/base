@@ -11,8 +11,8 @@ if [ -f ~/.profile ]; then
 fi
 
 # Load zsh if it's available
-if [ -x /bin/zsh ]; then
-   exec -l /bin/zsh
+if [ -x /usr/local/bin/zsh ]; then
+   exec -l /usr/local/bin/zsh
 else
    source ~/.bashrc
 fi
