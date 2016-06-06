@@ -8,3 +8,5 @@ AUTOLOAD_FILE="${ZSH_DIR}/autoload/autoload.zsh"
 if [ -f $AUTOLOAD_FILE ]; then
   source $AUTOLOAD_FILE
 fi
+
+source "${POWERLINE_ROOT}/powerline/bindings/zsh/powerline.zsh"
