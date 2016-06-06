@@ -31,3 +31,15 @@
 [submodule "directories/.vim/bundle/vim-buftabline"]
 	path = directories/.vim/bundle/vim-buftabline
 	url = git@github.com:ap/vim-buftabline.git
+[submodule "directories/.zsh/oh-my-zsh"]
+	path = directories/.zsh/oh-my-zsh
+	url = git@github.com:nadeemahmad/oh-my-zsh.git
+[submodule "directories/.zsh/custom/plugins/zsh-autosuggestions"]
+	path = directories/.zsh/custom/plugins/zsh-autosuggestions
+	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule "directories/.zsh/custom/plugins/zsh-completions"]
+	path = directories/.zsh/custom/plugins/zsh-completions
+	url = git@github.com:zsh-users/zsh-completions.git
+[submodule "directories/.zsh/custom/plugins/zsh-syntax-highlighting"]
+	path = directories/.zsh/custom/plugins/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
