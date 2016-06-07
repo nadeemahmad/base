@@ -83,7 +83,7 @@ ZSH_CUSTOM="${ZSH_DIR}/custom"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git vi-mode zsh-completions zsh-autosuggestions)
-autoload -U compinit && compinit
+#autoload -U compinit && compinit
 
 # export MANPATH="/usr/local/man:$MANPATH"
 source "${ZSH}/oh-my-zsh.sh"

@@ -8,7 +8,25 @@
 "==========================================================
 " Load pathogen
 "==========================================================
-execute pathogen#infect()
+"execute pathogen#infect()
+
+call plug#begin()
+
+Plug '~/.vim/bundle/nerdtree-git-plugin', { 'on':  'NERDTreeToggle' }
+Plug '~/.vim/bundle/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug '~/.vim/bundle/python-mode', { 'for': 'python' }
+Plug '~/.vim/bundle/syntastic'
+Plug '~/.vim/bundle/vim-better-whitespace'
+Plug '~/.vim/bundle/vim-buftabline'
+Plug '~/.vim/bundle/vim-colorschemes'
+Plug '~/.vim/bundle/vim-custom'
+Plug '~/.vim/bundle/vim-fugitive'
+Plug '~/.vim/bundle/vim-gitgutter'
+Plug '~/.vim/bundle/vim-json', { 'for': 'json' }
+Plug '~/.vim/bundle/vim-over'
+Plug '~/.vim/bundle/vim-puppet', { 'for': 'puppet' }
+
+call plug#end()
 
 syntax enable
 filetype plugin indent on
