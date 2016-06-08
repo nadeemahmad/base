@@ -17,9 +17,11 @@ if [[ "${HOSTNAME}" == *local ]]; then
   DEVTOOLS_PATH='/Users/nahmad/Code/devtools/bin'
   SYSTEM_BIN_PATH='/usr/local/bin:/usr/bin:/bin'
   SYSTEM_SBIN_PATH='/usr/local/sbin:/usr/sbin:/sbin'
-  GNUBIN_PATH="$(brew --prefix coreutils)/libexec/gnubin"
+  GNUBIN_PATH=""
 
   export PATH="${DEVTOOLS_PATH}:${GIT_PATH}:${GNUBIN_PATH}:${SYSTEM_BIN_PATH}:${SYSTEM_SBIN_PATH}"
+
+  alias ls='gls --color'
 
   if which rbenv > /dev/null
   then

@@ -46,3 +46,6 @@
 [submodule "directories/.vim/bundle/python-mode"]
 	path = directories/.vim/bundle/python-mode
 	url = git@github.com:klen/python-mode.git
+[submodule "directories/.zprezto"]
+	path = directories/.zprezto
+	url = git@github.com:sorin-ionescu/prezto.git

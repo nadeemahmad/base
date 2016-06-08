@@ -114,7 +114,7 @@ alias pbc='pbcopy'
 alias pbv='pbpaste'
 
 # Quick setup for config symlinks
-alias bld="sh ${BASE_DIR}/build.sh"
+alias bld="bash ${BASE_DIR}/build.sh"
 # Open vimrc file
 alias vrc='vim ~/.vimrc'
 # Source local zshrc to setup custom environment
